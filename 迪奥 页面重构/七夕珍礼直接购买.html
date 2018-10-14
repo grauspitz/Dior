@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>直接购买</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="font_qgwh3cvmnsd/iconfont.css">
+	<link rel="icon" type="image/x-icon" href="images/Dior.ico" />
+	<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+
+	
+	<style>
+		html,body{
+			width: 100%;
+			height: 100%;
+			background-color: gray;
+			background-image: url(images/back.png);
+		}
+		.mo{
+			width: 100%;
+			height: 100%;
+			background-color:rgba(0,0,0,0.6);
+			
+		}
+		.mai{
+			position: fixed;
+			top:30px;
+			right: 160px;
+			width: 1050px;
+			height: 560px;
+			background-color:white;
+			overflow: auto;
+			box-shadow:0 0 10px black;
+		}
+		.in{
+			width: 983px;
+			/*height: 845px;*/
+			margin:0 auto;
+			/*background-color: #f65200;*/
+		}
+		.title{
+			width: 983px;
+			margin:0 auto;
+			font:40px 宋体;
+			font-weight: 900;
+			text-align: center;
+			line-height: 150px;
+		}
+		.content::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.left{
+			width: 453px;
+			background-color: white;
+			float: left;
+		}
+		.right{
+			width: 461px;
+			float: left;
+			margin-left: 69px;
+			/*background-color: gray;*/
+		}
+		.wen>ul{
+
+		}
+		.wen>ul>li{
+			text-align: center;
+		}
+		.wen>ul>li>p{
+			text-align: right;
+			position: relative;
+			right: 40px;
+			margin-bottom:20px; 
+			font-size:  15px;
+			font-family:SimSun;
+			color: #a8a8a8; 
+			font-weight: 900;
+		}
+		.wen>ul>li>input{
+			width: 380px;
+			height: 45px;
+			border: 1px solid black;
+			margin:10px;
+			color: #a8a8a8;
+		}
+		.bottom{
+			margin:40px auto;
+			text-align: center;
+		}
+		.iconfont{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="mo animated rotateIn">
+	<div class="mai">
+	<div class="iconfont icon-close1"></div>
+		<div class="in">
+			<div class="title animated infinite rubberBand">
+				浪漫的爱礼盒
+			</div>
+			<div class="content">
+			<div class="left"><img src="images/mai.jpg" alt="">
+			<p style="font-size:18px;font-family:SimSun;font-weight:900;line-height:30px;">迪奥小姐花漾淡香水限时免费刻字</p>
+			<p style="font-size:14px;font-family:SimSun;font-weight:900;color:#999999;line-height:30px;">	即日起至8月19日</p>
+			<input type="text" value="请输入您的刻字内容" style="width:300px;height:45px;color:#999999;">
+			<div style="font-size:18px;color:#999999;font-family:SimSun;font-weight:600;position:relative;left:200px;">剩余8个字符</div>
+			</div>
+			<div class="right">
+				<div style="text-align:center;margin:0 auto;font:25px 宋体;font-weight:900;line-height:60px;">七夕梦幻私语</div>
+				<div style="text-align:center;margin:0 auto;font:20px 宋体;font-weight:900;">现实与虚拟交互的爱意情话将会一并送给TA</div>
+				<div class="wen">
+					<ul>
+						<li>
+							<input type="text" value="请填入收礼人的昵称">
+							<p id="q">剩余15个字符</p>
+						</li>
+						<li>
+							<input type="text" value="请填入收礼人的电话号码">
+							<p>*用于对方验证开启私语</p>
+						</li>
+						<li>
+							<input type="text" value="请填入爱的私语">
+							<p>剩余15个字符</p>
+						</li>
+						<li>
+							<input type="text" value="请填入您的昵称">
+							<p>剩余15个字符</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			</div>
+			<div class="bottom">
+				<input type="text" value="确认并购买" style="width:300px;height:45px;background-color:black;color:white;font-size:25px;font-weight:500;font-family:Microsoft Yahei;text-align:center;border:none;margin-top:30px;margin-bottom:20px;">
+				<p style="font-size:14px;font-family:SimSun;font-weight:900;color:#999999;line-height:30px;">刻字工艺需耗时2-3天，最终配送时间会相应延长。根据退换</p>
+				<p style="font-size:14px;font-family:SimSun;font-weight:900;color:#999999;line-height:30px;">货相关规定，非商品质量问题，已刻字产品不接受退货，敬请谅解。</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

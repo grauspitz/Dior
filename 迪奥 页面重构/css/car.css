@@ -1,0 +1,86 @@
+	.content3{
+			background: url(images/diorbg.jpg) 0 0 no-repeat;
+			min-width: 1100px;
+			height: 100%;
+			font-size: 14px;
+		}
+		.car-first{
+			width: 980px;
+			margin:50px auto;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px 3px #cccccc;
+			background-color: white;
+		}
+		.car-first::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.car-first>.car-left{
+			width: 690px;
+			height:2000px;
+			background-color:white;
+			float: left;
+			margin-left: 20px;
+		}
+		.car-first>.car-right{
+			width: 280px;
+			height:2000px;
+			background-color:teal;
+			float: right;
+		}
+		.car-first>.car-left>.car-wrap{
+			margin:20px;
+			background-color: pink;
+			height: 100%;
+		}
+		.car-left .car-title{
+			height: 70px;
+			background-color: blue;
+			line-height: 70px;
+		}
+		.car-title>span{
+			margin:0 15px;
+		}
+		.car-left .car-table>span{
+			font-size: 14px !important;
+
+		}
+		.car-left .car-table>input{
+			-webkit-appearance: none;
+			width: 20px;
+			height: 20px;
+			border:1px solid black;
+			background-color: white;
+			/*background-image: url(images/dui.png);*/
+		}
+		.car-input{
+			margin-top: 20px;
+			margin-bottom: 50px;
+
+		}
+		.car-input>input{
+			width: 234px;
+			height: 30px;
+			border: none;
+			background-color: #EBEBEB;
+		}
+		.car-input>button{
+			height: 32px;
+			width: 60px;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		.car-hei{
+			height: 340px;
+			background-color: black;
+			}
+			
+		table{
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+		}
+		.car-table td{
+			border-bottom:1px solid #ccc;
+		}

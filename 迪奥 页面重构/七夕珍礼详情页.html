@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>七夕珍礼</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="icon/iconfont.css">
+	<link rel="stylesheet" href="css/diao.css">
+	<link rel="stylesheet" href="css/dl.css">
+	<link rel="icon" type="image/x-icon" href="images/Dior.ico" />
+	<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+
+	
+	<style>
+		html,body{
+			height: 100%;
+			width: 100%;
+		}
+		.container1{
+			width: 1328px;
+			height: 100%;
+			margin:20px auto;
+			/*background-color: pink;*/
+		}
+		.header1{
+			width: 800px;
+			height: 20px;
+			margin:0 auto;
+			position: relative;
+			/*background-color: lightblue;*/
+		}
+		.header1>ul{
+			margin:0 auto;
+		}
+		.header1>ul>li{
+			text-align: center;
+			display: block;
+			float: left;
+			width: 80px;
+			font-size: 12px;
+		}
+		a:hover{
+			text-decoration-line: underline;
+		}
+		.header1>ul>li:nth-child(4){
+			width: 300px;
+		}
+		.nav{
+			position: absolute;
+			width: 1329px;
+			height: 400px;
+			top: 40px;
+			right:-270px;
+			background-color:white;
+			border-top:solid #e0e0e0 1px; 
+			overflow: hidden;
+			box-shadow: 0 10px 100px #5b5b5b;
+		}
+		.naav{
+		
+			display: none;
+			overflow-x: hidden;
+			width: 100%;
+			height: 22px;
+		}
+		.header1>ul>li:nth-child(1):hover>.naav{
+			display: block;
+		}
+		.jian{
+			width: 22px;
+			height: 22px;
+			border: solid #e0e0e0 1px; 
+        	transform: rotate(45deg);
+			position:absolute;
+			left: 28px;
+			top:29px;
+			background-color: #ccc;
+		}
+		.row{
+			width: 990px;
+			height: 430px;
+		}
+		.nav-title{
+			width: 396px;
+		}
+		.nav-title>h1{
+			position: relative;
+			float: left;
+			font-weight: 400;
+			font-size: 20px;
+			margin-top: 50px;
+			left: 200px;
+		}
+		.nav-title>ul{
+			position: relative;
+			top: 100px;
+			left: 120px;
+			float: left;
+		}
+		.nav-title>ul>li{
+			text-align: left;
+		}
+		.nav-image{
+			margin-top: 50px;
+			width: 584px;
+			height: 340px;
+			background-color: white;
+			float: right;
+		}
+		.nav-image>h1{
+			float: left;
+			font-weight: 400;
+			font-size: 20px;
+			margin-top:0;
+			position: relative;
+			left: 200px;
+
+		}
+		.image-left{
+			border:solid #e0e0e0 1px;
+			width: 267px;
+			height: 238px;
+			background-image: url(images/1.jpg);
+			position: relative;
+			top: 50px;
+			left: 200px;
+		}
+		.image-right{
+			border:solid #e0e0e0 1px;
+			width: 267px;
+			height: 238px;
+			background-image: url(images/2.jpg);
+			position: relative;
+			float: right;
+			top: -190px;
+			left: 200px;
+			}
+		.nv{
+			position: relative;
+			bottom: -50px;
+			left: 97px;
+		}
+		.nan{
+			position: relative;
+			bottom: -33px;
+			left: 444px;
+		}
+		.nav2{
+			position: absolute;
+			width: 1329px;
+			height: 400px;
+			top: 40px;
+			right:-270px;
+			background-color:white;
+			border-top:solid #e0e0e0 1px; 
+			overflow: hidden;
+			box-shadow: 0 10px 100px #5b5b5b;
+			
+		}
+		.naav2{
+			display: none;
+			overflow: hidden;
+		}
+		.header1>ul>li:nth-child(3):hover>.naav2{
+			display: block;
+		}
+		.jian2{
+			width: 22px;
+			height: 22px;
+			border: solid #e0e0e0 1px; 
+        	transform: rotate(45deg);
+			position:relative;
+			left: 30px;
+			top:14px;
+			background-color: #ccc;
+		}
+		.row2{
+			width: 990px;
+			height: 430px;
+		}
+		.nav-title2{
+			width: 396px;
+		}
+		.nav-title2>h1{
+			position: relative;
+			float: left;
+			font-weight: 400;
+			font-size: 20px;
+			margin-top: 50px;
+			left: 160px;
+		}
+		.nav-title2>ul{
+			position: relative;
+			top: 100px;
+			left: 120px;
+			float: left;
+		}
+		.nav-title2>ul>li{
+			text-align: left;
+		}
+		.nav-title3{
+			width: 396px;
+		}
+		.nav-title3>h1{
+			position: relative;
+			float: left;
+			font-weight: 400;
+			font-size: 20px;
+			margin-top: 50px;
+			left: 460px;
+		}
+		.nav-title3>ul{
+			position: relative;
+			top: 100px;
+			left: 420px;
+			float: left;
+		}
+		.nav-title3>ul>li{
+			text-align: left;
+		}
+		.nav1{
+			position: absolute;
+			width: 1329px;
+			height: 400px;
+			top: 40px;
+			right:-270px;
+			background-color:white;
+			border-top:solid #e0e0e0 1px; 
+			overflow: hidden;
+			box-shadow: 0 10px 100px #5b5b5b;
+		}
+		.naav1{
+			display: none;
+			overflow: hidden;.nav{
+			position: absolute;
+			width: 1329px;
+			height: 400px;
+			top: 40px;
+			left: 10px;
+			background-color:white;
+			border-top:solid #e0e0e0 1px; 
+			
+		}
+		.naav{
+			display: none;
+			overflow: hidden;
+		}
+		.header1>ul>li:nth-child(1):hover>.naav{
+			display: block;
+		}
+		.jian{
+			width: 22px;
+			height: 22px;
+			border: solid #e0e0e0 1px; 
+        	transform: rotate(45deg);
+			position:absolute;
+			left: 30px;
+			top:14px;
+		}
+		.row{
+			width: 990px;
+			height: 430px;
+		}
+		.nav-title{
+			width: 396px;
+		}
+		.nav-title>h1{
+			position: relative;
+			float: left;
+			font-weight: 400;
+			font-size: 20px;
+			margin-top: 50px;
+			left: 200px;
+		}
+		.nav-title>ul{
+			position: relative;
+			top: 100px;
+			left: 120px;
+			float: left;
+		}
+		.nav-title>ul>li{
+			text-align: left;
+		}
+		}
+		.header1>ul>li:nth-child(4):hover>.naav1{
+			display: block;
+		}
+		.jian1{
+			width: 22px;
+			height: 22px;
+			border: solid #e0e0e0 1px; 
+        	transform: rotate(45deg);
+			position:relative;
+			left: 130px;
+			top:14px;
+			background-color: #ccc;
+		}
+		.row1{
+			width: 990px;
+			height: 430px;
+		}
+		.nav-title1{
+			width: 396px;
+		}
+		.nav-title1>h1{
+			position: relative;
+			float: left;
+			font-weight: 400;
+			font-size: 20px;
+			margin-top: 50px;
+			left: 160px;
+		}
+		.nav-title1>ul{
+			position: relative;
+			top: 100px;
+			left: 120px;
+			float: left;
+		}
+		.nav-title1>ul>li{
+			text-align: left;
+		}
+		.nav-image1{
+			margin-top: 50px;
+			width: 584px;
+			height: 340px;
+			background-color: white;
+			float: right;
+		}
+		.nav-image1>h1{
+			float: left;
+			font-weight: 400;
+			font-size: 20px;
+			margin-top:0;
+			position: relative;
+			left: 200px;
+
+		}
+		.image-left1{
+			border:solid #e0e0e0 1px;
+			width: 270px;
+			height: 175px;
+			background-image: url(images/3.jpg);
+			position: relative;
+			top: 50px;
+			left: 170px;
+		}
+		.image-right1{
+			border:solid #e0e0e0 1px;
+			width: 270px;
+			height: 175px;
+			background-image: url(images/4.jpg);
+			position: relative;
+			float: right;
+			top: -129px;
+			left: 170px;
+			}
+		.nv1{
+			position: relative;
+			bottom: -60px;
+			left: 97px;
+		}
+		.nan1{
+			text-align: left;
+			position: relative;
+			bottom: -43px;
+			left: 480px;
+		}
+		.kv{
+			width: 1328px;
+			height: 543px;
+			margin:20px auto;
+		}
+		.kv-left{
+			width: 877px;
+			height: 543px;
+			background-image: url(images/5.jpg);
+			/*background-color:red; */
+			float: left;
+		}
+		.kv-right{
+			box-sizing: border-box;
+			border:solid 5px #ccc;
+			width: 451px;
+			height: 543px;
+			/*background-color: green;*/
+			float: right;
+			padding-top: 160px;
+			text-align: center;
+		}
+		.sici{
+			width: 1100px;
+			height: 54px;
+			margin:0px auto;
+		}
+		.sici>ul>li{
+			float: left;
+			width: 220px;
+			text-align: center;
+		}
+		.qixi{
+			width: 1328px;
+			height: 80px;
+			/*background-color: pink;*/
+			font-size:40px;
+		}
+		.line{
+			width: 1100px;
+			height: 0px;
+			border-top:solid #bcbcbc 2px;
+			float: right;
+			margin-top: 24px; 
+		}
+		.products{
+			width: 1328px;
+			height: 392px;
+			/*background-color: #70584c;*/
+			display: flex;
+			justify-content: space-between;
+		}
+		.product1,.product2,.product3,.product4{
+			width: 303px;
+			height: 100%;
+			/*background-color: teal;*/
+			font-size: 12px;
+			line-height: 18px;
+		}
+		.p1,.p2,.p3,.p4{
+			box-sizing: border-box;
+			width: 303px;
+			background-size:cover;
+		}
+	</style>
+</head>
+<body class="animated rotateIn">
+<div class="fense">
+		<div class="content">
+			<span>迪奥七夕盛放爱礼，官网独家迪奥小姐免费刻字，限量高定唇膏，更可定私密电子私语。<a href="#">即可探索</a></span>
+			<i class="iconfont icon-close"></i>
+		</div>	
+	</div>
+<div class="container" id="f-top">
+		<div class="header" >
+		<div class="wrap">
+				<div class="left">
+					<ul>
+						<li><i class="iconfont icon-fangzi myfont"></i></li>
+						<li><a href="#">女士</a></li>
+						<li><a href="#">男士</a></li>
+						<li><a href="#">香氛</a></li>
+						<li><a href="#">彩妆</a></li>
+						<li><a href="#">护肤</a></li>
+						<li><a href="#">珠宝</a></li>
+						<li><a href="#">腕表</a></li>
+						<li><a href="#">baby dior</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="#">diormag</a></li>
+						<li><a href="#">dior品牌</a></li>
+						<li><a href="#">diortv</a></li>
+					</ul>
+				</div>
+					</div>
+				</div>
+		<div class="logo">
+		<div class="wrap2">
+			<div class="animated infinite flipOutX"><img src="images/dior.png" alt="" style="margin-top:20px"></div>
+			<form>
+				<input type="text">
+				<i class="iconfont icon-sousuo myfonts2"></i>
+			</form>
+			<div class="biao2">
+				&nbsp;&nbsp;<i class="iconfont icon-star myfont5"></i>&nbsp;&nbsp;
+				<i class="iconfont icon-yonghu myfont5"></i>&nbsp;&nbsp;
+				<i class="iconfont icon-gouwudai myfont5"></i>&nbsp;&nbsp;
+			</div>
+		</div>
+		</div>
+<div class="container1">
+
+	<div class="header1">
+		<ul>
+			<li><a href="">新品</a>
+			<div class="naav">
+			<div class="jian"></div>
+			<div class="nav animated bounceIn">
+			
+				<div class="row">
+				<div class="nav-title">
+					<h1>万勿错过</h1>
+					<ul>
+						<li><a href="">新品</a></li>
+						<li><a href="">官网独家商品</a></li>
+						<li><a href="">明星商品</a></li>
+						<li><a href="">美妆大奖商品</a></li>
+						<li><a href="">迪奥香氛世家</a></li>
+					</ul>
+				</div>
+				<div class="nav-image">
+				<h1>必备经典</h1>
+					<div class="image-left"></div>
+					<div class="image-right"></div>
+					<div class="nv">
+					<a href="">DIOR迪奥小姐-香氛</a>
+					</div>
+					<div class="nan">
+					<a href="">DIOR迪奥桀骜男士运动-淡香水</a>
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			</div>
+			</li>
+			<li><a href="">明星商品</a></li>
+			<li><a href="">香氛</a>
+			<div class="naav2">
+			<div class="jian2"></div>
+			<div class="nav2 animated bounceIn">
+			
+				<div class="row2">
+				<div class="nav-title2">
+					<h1>女香</h1>
+					<ul>
+						<li><a href="">真我</a></li>
+						<li><a href="">迪奥小姐</a></li>
+						<li><a href="">奇葩</a></li>
+						<li><a href="">魅惑</a></li>
+						<li><a href="">沙丘</a></li>
+						<li><a href="">经典系列</a></li>
+						<li><a href="">&nbsp;</a></li>
+						<li><a href="">所有</a></li>
+					</ul>
+				</div>
+				<div class="nav-title3">
+					<h1>男香</h1>
+					<ul>
+						<li><a href="">旷野</a></li>
+						<li><a href="">桀骜</a></li>
+						<li><a href="">男士</a></li>
+						<li><a href="">清新之水</a></li>
+						<li><a href="">更高</a></li>
+						<li><a href="">&nbsp;</a></li>
+						<li><a href="">所有</a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			</div>
+			</li>
+			<li><a href="">MAISON CHRISTIAN DIOR PERFUMES</a>
+			<div class="naav1">
+			<div class="jian1"></div>
+			<div class="nav1 animated bounceIn">
+			
+				<div class="row1">
+				<div class="nav-title1">
+					<h1>系列</h1>
+					<ul>
+						<li><a href="">香氛</a></li>
+						<li><a href="">香氛蜡烛</a></li>
+						<li><a href="">沐浴与身体护理</a></li>
+						
+					</ul>
+				</div>
+				<div class="nav-image1">
+				<h1>DIOR迪奥香氛世家</h1>
+					<div class="image-left1"></div>
+					<div class="image-right1"></div>
+					<div class="nv1">
+					<a href="">将对香氛的热爱转化为生活艺术</a>
+					</div>
+					<div class="nan1">
+					<a href="">赠予TA，送自己，DIOR迪奥香氛世家系列，生动的情感色彩，值得挚爱，分享</a>
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			</div>
+			</li>
+			<li><a href="">刻字工作室</a></li>
+			<li><a href="">七夕礼物</a></li>
+			<li><a href="">香氛故事</a></li>
+		</ul>
+	</div>
+	<div class="kv">
+		<div class="kv-left"></div>
+		<div class="kv-right">
+			<p style="font:40px 宋体;font-weight:900;line-height:60px;">
+			迪奥七夕<br>
+			盛放爱礼	
+			</p>
+			<p style="font:20px 宋体;font-weight:900;line-height:40px;">
+			经典香水，以爱为铭；<br>
+			限量红唇，一吻定情；<br>
+			定制浪漫私语，为TA点燃此刻的灵动浪漫；<br>
+			</p>
+		</div>
+	</div>
+	<div class="sici">
+		<ul>
+			<li>七夕挚爱</li>
+			<li>爱意香氛</li>
+			<li>爱的色彩</li>
+			<li>奢宠爱肌</li>
+			<li>给他的爱</li>
+		</ul>
+	</div>
+	<div class="qixi">
+		七夕挚爱
+		<div class="line"></div>
+	</div>
+	<div class="products">
+		<div class="product1">
+			<div class="p1"><img src="images/p1.jpg" alt=""></div>
+		</div>
+		<div class="product2">
+			<div class="p2"><img src="images/p2.jpg" alt=""></div>
+			<p>迪奥小姐七夕礼盒</p>
+			<p>灵动花香 爱的气息时刻萦绕</p>
+			<p>-迪奥小姐花漾随行淡香氛 20ml</p>
+			<p>-迪奥小姐花漾淡香氛 50ml</p>
+			<p>￥ 1,130.00</p>
+			<button style="border:none;background-color:black;color:white;width:100px;height:35px;font-size:12px;margin-top:10px;">直接购买</button>
+			<div style="font-size:14px;color:#efd2a9;position:relative;left:200px;bottom:15px;width:70px;">#定制私语</div>
+		</div>
+		<div class="product3">
+			<div class="p3"><img src="images/p3.jpg" alt=""></div>
+			<p>浪漫的爱礼盒</p>
+			<p>玫瑰与牡丹浪漫包裹 浪漫爱意轻抚</p>
+			<p>-迪奥小姐花漾随行淡香氛 20ml</p>
+			<p>-迪奥小姐润手霜</p>
+			<p>-迪奥小姐花漾淡香氛 50ml</p>
+			<p>￥ 1,510.00</p>
+			<button style="border:none;background-color:black;color:white;width:100px;height:35px;font-size:12px;">直接购买</button>
+			<div style="font-size:14px;color:#efd2a9;position:relative;left:200px;bottom:15px;width:70px;">#定制私语</div>
+		</div>
+		<div class="product4">
+			<div class="p4"><img src="images/p4.jpg" alt=""></div>
+			<p>七夕经典礼盒</p>
+			<p>明星人气妆备 许她花漾魅力</p>
+			<p>-迪奥凝脂恒久 气垫粉底 010</p>
+			<p>-迪奥烈焰蓝金唇膏 520 （限量版）</p>
+			<p>-迪奥小姐花漾淡香氛 50ml</p>
+			<p>￥ 1,560.00</p>
+			<button style="border:none;background-color:black;color:white;width:100px;height:35px;font-size:12px;">直接购买</button>
+			<div style="font-size:14px;color:#efd2a9;position:relative;left:200px;bottom:15px;width:70px;">#定制私语</div>
+		</div>
+	</div>
+</div>
+	<div class="footer" >
+	<div class="wrap6">	
+		<div class="one">
+			<span>客服服务</span><br><br><br>
+			<a href="#">联系我们</a><br><br><br>
+			<span>国家/地区</span><br><br>
+<form action="GET">
+	   <select name="xuanze" id="one2" class="select">
+	   <option value="" disabled selected hidden><a href="#">中国（CNY￥）</a>
+	   </option>
+	   </select> 
+</form>
+	   <div class="sanjiao">
+	   	<i class="iconfont icon-jiantouxiangshang footer-font"></i>
+	   	<ul class="list">
+	   	<li><a href="#">Belgique (EUR€)</a></li>
+	   	<li><a href="#">Europe</a></li>
+	   	<li><a href="#">België (EUR€)</a></li>
+	   	<li><a href="#">Deutschland (EUR€)</a></li>
+	   	<li><a href="#">España (EUR€)</a></li>
+	   	<li><a href="#">United States (US$)</a></li>
+	   	<li><a href="#">Россия</a></li>
+	   	<li><a href="#">日本 (JPY¥)</a></li>
+	   	<li><a href="#">한국 (KRW₩)</a></li>
+	   	<li><a href="#">台灣</a></li>
+	   	<li><a href="#">España (EUR€)</a></li>
+	   	<li><a href="#">Nederland (EUR€)</a></li>
+	   	<li><a href="#">Россия</a></li>
+	   	<li><a href="#">中国 (CNY¥)</a></li>
+	   	<li><a href="#">香港</a></li>
+	   	<li><a href="#">Hong Kong</a></li>	
+	   	<li><a href="#">International version</a></li>
+	   </ul>
+	   </div>
+		<div class="footnav">
+			<a href="#"> 沪公网安备 31010602002343号 </a><br>
+			<a href="#">  沪ICP备10014525号  </a><br>
+			<a href="#"> 路威酩轩香水化妆品（上海）有限公司
+上海市南京西路1266号恒隆广场1期29F </a><br>
+		</div>
+		</div>
+		<div class="two">
+			<ul>
+				<li>精品店</li>
+				<li>工作机会</li>
+				<li>使用条款</li>
+				<li>数据保护章程</li>
+			</ul>
+		</div>
+		<div class="three">
+			<span>电子通讯</span><br><br><br>
+			<a href="#">率先获取最新作品的信息及Dior迪奥各领域的独家消息：</a><br><br>
+		<form action="GET" >
+			<i class="iconfont icon-icon1 xin"></i>
+			<input type="email" placeholder="请输入你的邮箱" class="ip">
+			<input type="submit" value="确定" class="submit">
+			   
+		</form>
+		<div class="footnav">
+			<strong>电子邮件必填项提交</strong><br><br><br>
+			<span>关注我们</span><br>	
+			<div class="yuan"><i class="iconfont icon-weibo last-font"></i></div>
+		</div>
+		</div>
+		
+	</div>
+	</div>
+	
+</body>
+</html>

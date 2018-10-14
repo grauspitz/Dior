@@ -1,0 +1,60 @@
+.car-hei .car-wrap{
+			width: 630px;
+			margin: 0 auto;
+			background-color: black;
+			color: white;
+			overflow-x: auto;
+			height: 250px;
+		}
+			.car-hei{
+			height: 390px;
+			background-color: black;
+			padding-top: 10px;
+			
+			}
+		.car-hei p{
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			border-bottom: 2px solid white;
+		}
+		.car-hei span{
+			font-size: 12px !important;
+			color:#848d8c;
+			line-height:40px;
+
+		}
+		.car-hei .car-gundong{
+			width: 630px;
+			display: flex;
+			justify-content:row;
+			align-content: center;
+			text-align: center;
+		}
+		.car-hei .car-gundong>.c-left{
+			box-sizing: border-box;
+			padding-top: 10px;
+			width: 193px;
+			height: 213px;
+			background-color: white;
+			margin-right: 20px;
+			flex:1;
+		}
+		.car-hei .car-gundong>.c-con{
+			flex:1;
+			width: 193px;
+			height: 213px;
+			background-color: white;
+			margin-right:20px;
+			box-sizing: border-box;
+			padding-top: 50px;
+
+		}
+		.car-hei .car-gundong>.c-right{
+			
+			width: 193px;
+			height: 213px;
+			background-color: white;
+			box-sizing: border-box;
+			padding-top: 50px;
+		}

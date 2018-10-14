@@ -1,0 +1,207 @@
+.fense{
+			background-color:gray;
+			width: 100%;
+		}
+		.content{
+			width: 610px;
+			margin:0 auto;
+			line-height: 40px;
+		}
+		.content .icon-close{
+			position: absolute;
+			right: 10px;
+			font-size: 20px;
+			color: #A8A8A8;
+		}
+		.content .icon-close:active{
+			display: none;
+		}
+		.fense span{
+			font-size: 14px;
+		}
+		.fense span{
+        text-align: center;
+        background-image: -webkit-linear-gradient(left, #f9dc01, #12a2ff 25%, #f27366 50%, #5ce3d5 75%, #fa737f);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-background-size: 200% 100%;
+        -webkit-animation: masked-animation 4s infinite linear;
+    }
+   		 @-webkit-keyframes masked-animation {
+         0%{ background-position: 0 0;}
+         100% { background-position: -100% 0;}
+    }
+		.ddd::after{
+			clear: both;
+			display: block;
+			content: "";
+		}
+		.ddd{
+			width: 850px;
+			height: 330px;
+			margin:40px auto;
+		}
+		.ddd h1{
+			color: #636363;
+			margin-bottom: 20px;
+		}
+		.zhuce{
+			height: 274px;
+			width: 418px;
+			float: left;
+			margin-right: 10px;
+			border:1px solid #ccc;
+		}
+		.denglu{
+			height: 274px;
+			width: 418px;
+			float: right;
+			border:1px solid #ccc;
+		}
+		.dr{
+			width: 373px;
+			margin:20px auto;
+		}
+		.dr p:first-child{
+			color: black;
+			font-size: 14px;
+			padding-top: 10px;
+		}
+		.dr .pp{
+			color: #A0A0A0;
+			font-size: 10px;
+			padding-top: 10px;
+		}
+		.dr hr{
+			width: 363px;
+			margin-top: 10px;
+		}
+		.dr button{
+			background-color: black;
+			color: white;
+			line-height:30px;
+			border:none;
+			float:right;
+		}
+		.denglu .lb{
+			color: black;
+		}
+		.put{
+			margin-top:20px; 
+			float: right;
+		}
+		.put input{
+			background-color: #EBEBEB;
+			border:none;
+			width: 262px;
+			height: 30px;
+		 	
+		} 
+		.users {
+			margin-top:20px; 		
+			float: left;
+		}
+		.put2{
+			margin-top:20px; 
+			float: right;
+		}
+		.put2 input{
+			background-color: #EBEBEB;
+			border:none;
+			width: 262px;
+			height: 30px;	
+		} 
+		.users2 {
+			margin-top:80px; 		
+			float: left;
+			margin-left: -40px;
+		}
+		.dr::after{
+			content: "";
+			clear: both;
+			display: block;
+		}
+		.shi{
+			margin-top: 120px;
+			margin-left:110px;
+		}
+		.shi a{
+			text-decoration: underline;
+		}
+		.shi .ps{
+			color: #A0A0A0;
+			font-size: 10px;
+			padding-top: 10px;
+			
+		}
+		.shi .pss{
+			font-size:25px;
+		}
+		.biao{
+			position:absolute;
+			left: 1160px;
+			top:40px;
+
+		}
+		.biao .myfont4{
+			font-size: 30px;
+		}
+		
+		.tan{
+			color: white;
+			text-align: center;
+			border:none;
+			width: 220px;
+			height: 34px;
+			margin-top: 15px;
+		}
+		.tan2{
+			color: black;
+			text-align: center;
+			width: 220px;
+			height: 34px;
+			margin:15px 0;
+		}
+		.yonghu{
+			border:1px solid #ccc;
+			background-color:white;
+			width: 250px;
+			height: 290px;
+			position: absolute;
+			right:-75px;
+			top:35px;
+			text-align: initial;
+			display: none;
+			padding-left: 20px;
+		
+		}
+		.yonghu ul>li{
+			margin-top: 10px;
+		}
+		.yonghu ul>li>a{
+			margin-left: 30px;
+		}
+		.icon-gouwudai1{float:right;}
+		.icon-star1{float: left;}
+		.icon-yonghu1{
+			float: left;
+		}
+		.icon-yonghu1:hover .yonghu{
+		display: block;
+		}
+		.icon-yonghu1:hover .sj{
+		display: block;
+		transform: rotate(45deg);
+		}
+		.sj{
+			width: 15px;
+			height: 15px;
+			margin:0 auto;
+			background-color:white;
+			transition:transform 2s;
+			display: none;
+			border-left:1px solid #ccc;
+			border-top:1px solid #ccc;
+			position: relative;
+			top:-10px;
+		}
